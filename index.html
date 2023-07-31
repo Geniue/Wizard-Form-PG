@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wizard Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+</head>
+<style>
+ #pills-tabContent .tab-pane{
+        width: 100%;
+        height: 330px;
+    }
+    #pills-tabContent .tab-pane form{
+    display: flex;
+    flex-direction: column;
+ }
+    .btn-lightgreen {
+    background-color: #2baf38 !important
+}
+.progress, .progress-stacked {
+    background-color: transparent !important;
+    border:1px solid #2baf38;
+    border-radius: 4px!important;
+}
+.progress-bar{
+    background-color: #2baf38 !important;
+  }
+  .progress{
+    height: 11px !important;
+}
+.pg-res-vid{
+  max-width: 100%;
+}
+@media(max-width:786px){
+  .pg-res-vid{
+        max-height: 300px;
+    max-width: 100%;
+  }
+}
+@media (min-width:787px)
+{
+  .nav-pg-sd{
+    height: 95px;
+  }
+  .max-md-w-50{
+    width: 50%;
+  }
+}
+  </style>
+
+<style>
+ul.ks-cboxtags {
+  list-style: none;
+  height: 214px;
+  overflow: auto;
+  padding: 20px; }
+  ul.ks-cboxtags li {
+    display: block; }
+    ul.ks-cboxtags li label {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333333;
+      font-size: 18px;
+      border-radius: 4px;
+      white-space: nowrap;
+      margin: 0 0 10px 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      display: block; }
+
+ul.ks-cboxtags li label {
+  padding: 4px 13px;
+  cursor: pointer; }
+  ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 24px;
+    padding: 0;
+    content: "\f1db";
+    color: rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    position: absolute;
+    right: 8%;
+    margin-top: -5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (prefers-reduced-motion: reduce) {
+      ul.ks-cboxtags li label::before {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f058";
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  color: #2baf38; }
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute; }
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0; }
+
+
+</style>
+
+<body style="background-color: #4078bc;">
+
+    <nav class="position-sticky top-0 sticky-top nav-pg-sd" style="background-color: #fff;">
+        <div class="container">
+            <header>
+                <div>
+                    <img src="./assets/PGUpholsteryAndCarpetCleaning (3).png" width="300" alt="">
+                </div>
+            </header>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column flex-lg-row gap-lg-5 gap-4 p-md-4 p-lg-0">
+
+      
+      <section class="max-md-w-50">
+        <div class="container-fulid">
+            <video preload="auto" disablePictureInPicture='true' class="pg-res-vid" autoplay muted loop
+            poster="./assets/ny-carpet-cleaning.jpg">
+        <source media="(orientation: landscape)" class=""
+            src="assets/3-PristineGreen-Carpet-Cleaning-Service-NYC-Carpet-Cleaner-Service-Upholstery-Steam-Cleaning-YouTube-1.mp4"
+            sizes="(min-width: 60rem) 80vw,
+       (min-width: 40rem) 90vw,
+       100vw"
+            type="video/mp4">
+        <source media="(orientation: portrait)" class=""
+            src="assets/3-PristineGreen-Carpet-Cleaning-Service-NYC-Carpet-Cleaner-Service-Upholstery-Steam-Cleaning-YouTube.webm"
+            sizes="(min-width: 60rem) 80vw,
+       (min-width: 40rem) 90vw,
+       100vw"
+            type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+        </div>
+    </section>
+
+  <section class="position-relative max-md-w-50" >
+    <!-- bg-img -->
+    <div role="main" class="px-3 p-md-4   w-100 d-flex item-center justify-center">
+        <div class="d-flex flex-col gap-4 rounded-3 h-100 py-3 bg-black col-12 col-sm-10  mx-auto " style="--bs-bg-opacity: 0.3">
+            <div class="mx-lg-auto w-100 p-3 ">
+                <!-- <form action="https://pristinegreencleaning.com/free-quote" method="POST" class="d-flex flex-column gap-4 gap-md-3 px-4 row">
+                    <input type="hidden" name="_token" value="YGkvIwqnS4zeZ7maqCiXyL4CzifpvSTE8ha8NUu0">                        <input class="col-12 p-2 outline-none rounded-1" type="text" name="name" id="" style="outline: none !important" placeholder="Name">
+                    <input class="col-12 p-2 p-2 outline-none rounded-1" type="email" name="email" id="" style="outline: none !important" placeholder="Email">
+                    <input class="col-12 p-2 p-2 outline-none rounded-1" type="text" name="phone" id="" style="outline: none !important" placeholder="Phone Number">
+                    <input class="col-12 p-2 p-2 outline-none rounded-1" type="text" name="zip" id="" style="outline: none !important" placeholder="Zipcode">
+                    <input class="col-12 p-2 p-2 outline-none rounded-1" type="text" name="describe" id="" style="outline: none !important" placeholder="What do you need cleaned?">
+                    <button class="my-2 col-sm-8 col-xl-5 tex-white mx-auto py-2 btn-lightgreen fs-5 rounded-1">
+                        Free Quote Now
+                    </button>
+                </form> -->
+                <div class="tab-content h-100" id="pills-tabContent">
+                    <div class="tab-pane position-relative fade show active" id="pills-step1" role="tabpanel"
+                      aria-labelledby="pills-step1-tab">
+                      <h3 class="text-white fs-3 fw-bold text-center mb-2">What do you need cleaned?</h3>
+                      <form id="step1Form">
+                        <div class="form-group  my-auto">
+                            <ul class="ks-cboxtags p-0 m-0 position-relative">
+                                <li>
+                                    <input type="checkbox" id="checkboxOne" value="Order one">
+                                    <label for="checkboxOne">Couch</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="checkboxTwo" value="Order Two">
+                                    <label for="checkboxTwo">Carpet</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="checkboxThree" value="Order Two">
+                                    <label for="checkboxThree">Mattress</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="checkboxFour" value="Order Two">
+                                    <label for="checkboxFour">Car</label>
+                                </li>
+                                <li class="mb-4">
+                                    <input type="checkbox" id="checkboxFive" value="Order Two">
+                                    <label for="checkboxFive">Other</label>
+                                </li>
+                              </ul>
+                        
+                        </div>
+                        <button class="btn text-white fs-5 fw-semibold  btn-lightgreen position-absolute bottom-0 w-100 mt-1 py-1" type="button" id="nextStep1">Next <svg fill="#ffffff" height="15" width="15" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-81.94 -81.94 675.97 675.97" xml:space="preserve" stroke="#ffffff" stroke-width="21.507948000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M263.641,248.4L18.308,3.067c-4.16-4.053-10.987-3.947-15.04,0.32c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76 L3.268,493.733c-4.267,4.053-4.373,10.88-0.213,15.04c4.16,4.16,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213 L263.641,263.44C267.801,259.28,267.801,252.56,263.641,248.4z"></path> <path d="M508.974,248.4L263.641,3.067c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76 l-237.76,237.867c-4.267,4.053-4.373,10.88-0.213,15.04c4.16,4.16,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213 L508.974,263.44C513.135,259.28,513.135,252.56,508.974,248.4z"></path> </g> </g> </g> </g></svg></button>
+                      </form>
+                    </div>
+      
+                    <div class="tab-pane position-relative fade" id="pills-step2" role="tabpanel" aria-labelledby="pills-step2-tab">
+                      <h3 class="text-white fs-3 fw-bold text-center" >Enter your phone 
+                        <br>
+                        number</h3>
+                      <div>
+<div class="text-center mt-3">
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#2eb83c"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z" fill="#2baf38"></path> <path d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z" fill="#2baf38"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z" fill="#2baf38"></path> </g></svg>
+</div>
+                          <form id="step2Form">
+                              <div class="form-group mt-4 ">
+                                  <input type="text" class="form-control" id="phoneNumber" required>
+                                </div>
+                                <div class="d-flex gap-3 position-absolute bottom-0 w-100">
+                                    <!-- <button class="btn text-white fs-5 fw-semibold  btn-lightgreen w-100" type="button" id="prevStep2">Previous</button> -->
+                                    <button class="btn text-white fs-5 fw-semibold  btn-lightgreen w-100 py-1" type="button" id="nextStep2">Next
+                                      <svg fill="#ffffff" height="15" width="15" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-81.94 -81.94 675.97 675.97" xml:space="preserve" stroke="#ffffff" stroke-width="21.507948000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M263.641,248.4L18.308,3.067c-4.16-4.053-10.987-3.947-15.04,0.32c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76 L3.268,493.733c-4.267,4.053-4.373,10.88-0.213,15.04c4.16,4.16,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213 L263.641,263.44C267.801,259.28,267.801,252.56,263.641,248.4z"></path> <path d="M508.974,248.4L263.641,3.067c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l237.76,237.76 l-237.76,237.867c-4.267,4.053-4.373,10.88-0.213,15.04c4.16,4.16,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213 L508.974,263.44C513.135,259.28,513.135,252.56,508.974,248.4z"></path> </g> </g> </g> </g></svg>
+                                    </button>
+                                </div>
+                            </div>
+                      </form>
+                    </div>
+      
+                    <div class="tab-pane position-relative fade" id="pills-step3" role="tabpanel" aria-labelledby="pills-step3-tab">
+                      <h3 class="text-white text-center fs-3 fw-bold">Thank you! We will call you within 12hrs.</h3>
+                      <div class="text-center mt-4">
+                        <svg fill="#2eb83c" height="110px" width="110px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <polygon points="437.3,30 202.7,339.3 64,200.7 0,264.7 213.3,478 512,94 "></polygon> </g></svg>
+                      </div>
+                      <button class="btn text-white fs-5 fw-semibold  btn-lightgreen position-absolute bottom-0 w-100 py-1" type="button" id="nextStep1">Done</button>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Add Bootstrap JS, Popper.js, and jQuery links here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+      function updateProgressBar(activeStep) {
+        const stepNumber = activeStep + 1;
+        const progressBarWidth = (stepNumber / 3) * 100;
+        $(".progress-bar").animate({ width: `${progressBarWidth}%` }, 500);
+      }
+  
+      // Next button events
+      $("#nextStep1").click(function () {
+        $("#pills-step1").hide()
+          $("#pills-step1").removeClass("show");
+          $("#pills-step2").addClass("show").show();
+          updateProgressBar(1);
+      });
+  
+      $("#nextStep2").click(function () {
+        $("#pills-step2").hide()
+          $("#pills-step2").removeClass("show");
+          $("#pills-step3").addClass("show").show();
+          updateProgressBar(2);
+      });
+  
+      // Previous button events
+      $("#prevStep2").click(function () {
+        $("#pills-step2").hide()
+          $("#pills-step2").removeClass("show");
+          $("#pills-step1").addClass("show").show();
+          updateProgressBar(0);
+      });
+  
+      $("#prevStep3").click(function () {
+        $("#pills-step3").hide()
+          $("#pills-step3").removeClass("show");
+          $("#pills-step2").addClass("show").show();
+          updateProgressBar(1);
+        });
+    });
+  </script>
+  
+</body>
+
+</html>
